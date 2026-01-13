@@ -1,8 +1,29 @@
+Metadata-Version: 2.4
+Name: promptdiff
+Version: 0.1.0
+Summary: Git-style diffs for LLM outputs
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.9.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: sentence-transformers>=2.2.0
+Requires-Dist: requests>=2.28.0
+Provides-Extra: openai
+Requires-Dist: openai>=1.0.0; extra == "openai"
+Provides-Extra: anthropic
+Requires-Dist: anthropic>=0.18.0; extra == "anthropic"
+Provides-Extra: all
+Requires-Dist: openai>=1.0.0; extra == "all"
+Requires-Dist: anthropic>=0.18.0; extra == "all"
+
 # PromptDiff 🧠🔍
 
 **Git-style diffs for LLM outputs.**
 
-PromptDiff helps you compare Large Language Model outputs across prompts, models, or parameters to detect **semantic regressions and improvements** before they reach users.
+PromptDiff helps you compare Large Language Model outputs across prompts,
+models, or parameters to detect **semantic regressions and improvements**
+before they reach users.
 
 ---
 
